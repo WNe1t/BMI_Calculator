@@ -34,7 +34,7 @@ public partial class MainWindow : Window
     private void calculation_Onclick(object sender, RoutedEventArgs e) 
     {
         
-        if (int.TryParse(visual_growth.Text, out _age) && int.TryParse(visual_weight.Text, out _weight))  // не знаю как это работает>???
+        if (int.TryParse(visual_growth.Text, out _age) && int.TryParse(visual_weight.Text, out _weight))  // не знаю как это работает > int.TryParse( out )
         {
             string answer;
 
