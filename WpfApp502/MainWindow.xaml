@@ -23,7 +23,7 @@
             </StackPanel>
             
             <StackPanel>
-                    <TextBox Name="visual_answer" Padding="5" Text="{Binding answer}" />
+                    <TextBox Name="visual_answer" Padding="5" />
             </StackPanel>
         </StackPanel>
         
