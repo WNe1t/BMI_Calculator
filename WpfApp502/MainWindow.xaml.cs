@@ -1,4 +1,4 @@
-﻿using System.Security.Policy;
+using System.Security.Policy;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,9 +17,11 @@ namespace WpfApp502;
 /// </summary>
 public partial class MainWindow : Window
 {
+    /* Записанные пользователем данные */
     private int _age;
-    
     private int _weight;
+    
+    /* const */
     private int _notEnoughWeight = 20;
     private int _normalWeight = 25;
     private int _overweight = 30;
@@ -34,10 +36,11 @@ public partial class MainWindow : Window
     private void calculation_Onclick(object sender, RoutedEventArgs e) 
     {
         
-        if (int.TryParse(visual_growth.Text, out _age) && int.TryParse(visual_weight.Text, out _weight))  // не знаю как это работает > int.TryParse( out )
+        if (int.TryParse(visual_growth.Text, out _age) && int.TryParse(visual_weight.Text, out _weight))  // не знаю как это работает > int.TryParse ( out );
         {
             string answer;
-
+            
+            // Операторы выбора можно сделать через switch, не пробовал(
             if (_age <= 24)
             {
                 
